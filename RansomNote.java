@@ -40,6 +40,7 @@ public class RansomNote {
         }
         return res;
     }
+
     public static void main (String[] arg) {
         RansomNote obj = new RansomNote();
 
@@ -47,5 +48,4 @@ public class RansomNote {
         System.out.println(obj.canConstruct("aa", "ab"));
         System.out.println(obj.canConstruct("aa", "aab"));
     }
-
 }
