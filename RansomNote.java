@@ -36,7 +36,7 @@ public class RansomNote {
             if (f < 0){
                 return false;
             }
-            magazine = magazine.substring(0, f) + magazine.substring(f+1, magazine.length());
+            magazine = magazine.substring(0, f) + magazine.substring(f+1);
         }
         return res;
     }
