@@ -1,3 +1,5 @@
+package ArrayAndString;
+
 public class LargestNumberAtLeastTwiceOfOthers {
 
     public int dominantIndex(int[] nums) {
