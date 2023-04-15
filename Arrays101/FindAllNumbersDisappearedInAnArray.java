@@ -1,14 +1,13 @@
 package Arrays101;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
 public class FindAllNumbersDisappearedInAnArray {
     public List<Integer> findDisappearedNumbers(int[] nums) {
-        List<Integer> missingNumbers = new ArrayList<Integer>();
-        HashSet<Integer> numbers = new HashSet<Integer>();
+        List<Integer> missingNumbers = new ArrayList<>();
+        HashSet<Integer> numbers = new HashSet<>();
 
         for(int i:nums){
             numbers.add(i);

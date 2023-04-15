@@ -1,7 +1,5 @@
 package Arrays101;
 
-import java.util.Arrays;
-
 public class CheckIfNAndItsDoubleExist {
     public boolean checkIfExist(int[] arr) {
         for(int i=0; i<arr.length; i++){

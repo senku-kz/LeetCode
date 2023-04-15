@@ -24,11 +24,9 @@ public class SortArrayByParity {
         SortArrayByParity obj = new SortArrayByParity();
 
         int[] a1 = new int[]{3,1,2,4};
-        obj.sortArrayByParity(a1);
-        System.out.println(Arrays.toString(a1));
+        System.out.println(Arrays.toString(obj.sortArrayByParity(a1)));
 
         int[] a2 = new int[]{0};
-        obj.sortArrayByParity(a2);
-        System.out.println(Arrays.toString(a2));
+        System.out.println(Arrays.toString(obj.sortArrayByParity(a2)));
     }
 }
