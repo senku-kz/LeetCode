@@ -8,7 +8,7 @@ public class LongestCommonPrefix {
             return "";
         }
         boolean p = true;
-        String prefix = "";
+        StringBuilder prefix = new StringBuilder();
         short i = 0;
         do{
             for (short str=1; str< strs.length; str++){
@@ -18,14 +18,14 @@ public class LongestCommonPrefix {
                 }
             }
             if (p) {
-                prefix += strs[0].charAt(i);
+                prefix.append(strs[0].charAt(i));
             }
             i++;
             if( strs[0].length() == i){
                 p = false;
             }
         }while (p);
-        return prefix;
+        return prefix.toString();
     }
 
     public static void main (String[] arg) {
