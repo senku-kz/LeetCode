@@ -1,0 +1,37 @@
+package Arrays101;
+
+import java.util.Arrays;
+
+public class HeightChecker {
+    public int heightChecker(int[] heights) {
+        int[] expected = new int[heights.length];
+        for(int i=0; i<heights.length; i++){
+            expected[i] = heights[i];
+        }
+
+        int tmp;
+        for(int j=0; j<heights.length; j++){
+            for(int i=0; i<heights.length-j-1; i++){
+                if (expected[i]>expected[i+1]){
+                    tmp = expected[i];
+                    expected[i] = expected[i+1];
+                    expected[i+1] = tmp;
+                }
+            }
+        }
+
+        int cnt = 0;
+        for (int i=0; i<heights.length; i++){
+            if(heights[i] != expected[i])
+                cnt++;
+        }
+        return cnt;
+    }
+
+    public static void main (String[] arg) {
+        HeightChecker obj = new HeightChecker();
+
+        System.out.println(obj.heightChecker(new int[]{1,1,4,2,1,3}));
+        System.out.println(obj.heightChecker(new int[]{5,1,2,3,4}));
+    }
+}
