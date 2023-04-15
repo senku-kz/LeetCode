@@ -5,7 +5,26 @@ import java.util.List;
 
 public class PascalsTriangle {
     public List<List<Integer>> generate(int numRows) {
-        return new ArrayList<>();
+        List<List<Integer>> triangle = new ArrayList<List<Integer>>();
+        int t;
+
+        for (int i = 1; i <= numRows; i++) {
+            List<Integer> list = new ArrayList<Integer>();
+            list.add(1);
+
+            if (i>2) {
+                for (int j = 1; j < i - 1; j++) {
+                    t = triangle.get(i - 2).get(j-1) + triangle.get(i - 2).get(j);
+                    list.add(t);
+                }
+            }
+
+            if (i>1) {
+                list.add(1);
+            }
+            triangle.add(list);
+        }
+        return triangle;
     }
 
     public static void main (String[] arg) {
