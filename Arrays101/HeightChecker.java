@@ -3,9 +3,7 @@ package Arrays101;
 public class HeightChecker {
     public int heightChecker(int[] heights) {
         int[] expected = new int[heights.length];
-        for(int i=0; i<heights.length; i++){
-            expected[i] = heights[i];
-        }
+        System.arraycopy(heights, 0, expected, 0, heights.length);
 
         int tmp;
         for(int j=0; j<heights.length; j++){
