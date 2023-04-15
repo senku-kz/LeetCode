@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class SquaresOfaSortedArray2 {
     public int[] sortedSquares(int[] nums) {
-        int tmp;
         for (int i=0; i<nums.length; i++){
             nums[i] = nums[i]*nums[i];
         }

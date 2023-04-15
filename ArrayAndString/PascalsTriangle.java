@@ -5,11 +5,11 @@ import java.util.List;
 
 public class PascalsTriangle {
     public List<List<Integer>> generate(int numRows) {
-        List<List<Integer>> triangle = new ArrayList<List<Integer>>();
+        List<List<Integer>> triangle = new ArrayList<>();
         int t;
 
         for (int i = 1; i <= numRows; i++) {
-            List<Integer> list = new ArrayList<Integer>();
+            List<Integer> list = new ArrayList<>();
             list.add(1);
 
             if (i>2) {

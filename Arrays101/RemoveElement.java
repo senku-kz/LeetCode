@@ -24,10 +24,12 @@ public class RemoveElement {
 
         int[] a1 = new int[]{3,2,2,3};
         int k1 = obj.removeElement(a1, 3);
+        System.out.println(k1);
         System.out.println(Arrays.toString(a1));
 
         int[] a2 = new int[]{0,1,2,2,3,0,4,2};
         int k2 = obj.removeElement(a2, 2);
+        System.out.println(k2);
         System.out.println(Arrays.toString(a2));
     }
 }
