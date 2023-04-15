@@ -8,8 +8,9 @@ public class AddBinary {
 
         while (i>=0 || j>=0){
             int sum = carry;
+            // ASCII '0' == 48 / '1' == 49
             if (i>=0) sum += a.charAt(i) - '0';
-            if (j>=0) sum += b.charAt(j) - '0';
+            if (j>=0) sum += b.charAt(j) - 48;
             sb.append(sum%2);
             carry = sum/2;
 
