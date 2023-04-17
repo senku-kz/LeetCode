@@ -2,6 +2,10 @@ package ArrayAndString;
 
 import java.util.Arrays;
 
+/*
+Given an array and a value, remove all instances of that value in-place and return the new length.
+ */
+
 public class RemoveElementTwoPointerTechnique {
     public int removeElement(int[] nums, int val) {
         int k = 0;
