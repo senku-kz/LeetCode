@@ -28,6 +28,5 @@ public class RemoveElementTwoPointerTechnique {
         int[] t3 = new int[]{-1,0,5,6,0,5,6,0,0,4};
         System.out.println(obj.removeElement(t3, 0));
         System.out.println(Arrays.toString(t3));
-
     }
 }
